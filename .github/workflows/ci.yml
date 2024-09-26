@@ -37,9 +37,9 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: "http://sonarqube.example.com"
-        with:
-          projectKey: "your-project-key"
-          sources: "src/"
+        # with:
+        #   projectKey: "your-project-key"
+        #   sources: "src/"
           
   docker-build:
     needs: sonar
