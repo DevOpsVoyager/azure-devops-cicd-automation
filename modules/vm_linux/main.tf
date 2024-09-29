@@ -4,7 +4,8 @@ resource "azurerm_linux_virtual_machine" "vm_linux" {
   location            = var.location
   size                = var.vm_linux_size
   admin_username      = var.vm_linux_admin_username
-  network_interface_ids = [azurerm_network_interface.nic.id]
+  # network_interface_ids = [azurerm_network_interface.nic.id]
+  network_interface_ids = [var.nic_id]
 
   admin_ssh_key {
     username   = var.vm_linux_admin_username

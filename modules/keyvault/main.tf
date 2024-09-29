@@ -31,6 +31,4 @@ resource "azurerm_key_vault" "key_vault" {
       storage_permissions     = access_policy.value.storage_permissions
     }
   }
-
-  tags = var.tags
 }

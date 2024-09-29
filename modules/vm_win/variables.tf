@@ -57,3 +57,8 @@ variable "version" {
   description = "The version of image"
   type        = string
 }
+
+variable "win_nic_id" {
+  description = "The NIC ID of VM"
+  type        = string
+}
