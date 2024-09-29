@@ -67,9 +67,3 @@ variable "virtual_network_subnet_ids" {
   type        = list(string)
   default     = []
 }
-
-variable "tags" {
-  description = "A mapping of tags to assign to the Key Vault"
-  type        = map(string)
-  default     = {}
-}

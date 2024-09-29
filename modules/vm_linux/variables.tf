@@ -57,3 +57,8 @@ variable "linux_version" {
   description = "The version of image"
   type        = string
 }
+
+variable "nic_id" {
+  description = "The version of image"
+  type        = string
+}
